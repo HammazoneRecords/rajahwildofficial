@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from 'react';
-import { Menu, X, Play, ExternalLink, Instagram, Youtube, Music2 } from 'lucide-react';
+import { Menu, X, Play, ExternalLink, Instagram, Youtube, Rocket } from 'lucide-react';
 import WorkingDraftBanner from './components/WorkingDraftBanner';
 
 /* ─── Palette ───────────────────────────────────────────────────────────── */
@@ -105,10 +105,22 @@ function Hero({ onNav }: { onNav: (id: string) => void }) {
       <div style={{ position: 'absolute', top: '20%', left: '50%', transform: 'translateX(-50%)', width: 600, height: 600, borderRadius: '50%', background: 'radial-gradient(circle, rgba(0,255,90,0.06) 0%, transparent 70%)', pointerEvents: 'none' }} />
       <div style={{ position: 'absolute', bottom: '10%', right: '5%', width: 300, height: 300, borderRadius: '50%', background: 'radial-gradient(circle, rgba(0,255,90,0.04) 0%, transparent 70%)', pointerEvents: 'none' }} />
 
-      {/* EP badge */}
-      <div style={{ display: 'inline-flex', alignItems: 'center', gap: 8, background: C.voltDim, border: `1px solid rgba(0,255,90,0.25)`, borderRadius: 2, padding: '6px 16px', marginBottom: 24 }}>
-        <Music2 size={12} style={{ color: C.volt }} />
-        <span style={{ fontFamily: FF.ui, fontSize: 11, fontWeight: 700, letterSpacing: 3, textTransform: 'uppercase', color: C.volt }}>Rocket Science EP — Out Now</span>
+      {/* EP badge — sideways rocket */}
+      <div style={{ position: 'relative', display: 'inline-flex', alignItems: 'center', justifyContent: 'center', marginBottom: 32, padding: '18px 48px', overflow: 'hidden' }}>
+        {/* border frame */}
+        <div style={{ position: 'absolute', inset: 0, border: `1px solid rgba(0,255,90,0.22)` }} />
+        {/* corner accents */}
+        <div style={{ position: 'absolute', top: -1, left: -1, width: 10, height: 10, borderTop: `2px solid ${C.volt}`, borderLeft: `2px solid ${C.volt}` }} />
+        <div style={{ position: 'absolute', top: -1, right: -1, width: 10, height: 10, borderTop: `2px solid ${C.volt}`, borderRight: `2px solid ${C.volt}` }} />
+        <div style={{ position: 'absolute', bottom: -1, left: -1, width: 10, height: 10, borderBottom: `2px solid ${C.volt}`, borderLeft: `2px solid ${C.volt}` }} />
+        <div style={{ position: 'absolute', bottom: -1, right: -1, width: 10, height: 10, borderBottom: `2px solid ${C.volt}`, borderRight: `2px solid ${C.volt}` }} />
+        {/* big sideways rocket behind text */}
+        <Rocket size={88} style={{ position: 'absolute', transform: 'rotate(90deg)', color: C.volt, opacity: 0.07 }} />
+        {/* text */}
+        <div style={{ position: 'relative', zIndex: 1, display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 3 }}>
+          <span style={{ fontFamily: FF.display, fontSize: 26, letterSpacing: 6, color: C.volt, textShadow: '0 0 24px rgba(0,255,90,0.45)', lineHeight: 1 }}>ROCKET SCIENCE</span>
+          <span style={{ fontFamily: FF.ui, fontSize: 10, fontWeight: 600, letterSpacing: 5, textTransform: 'uppercase', color: C.muted }}>EP · Out Now</span>
+        </div>
       </div>
 
       {/* Name */}
@@ -120,7 +132,7 @@ function Hero({ onNav }: { onNav: (id: string) => void }) {
       </h1>
 
       <p style={{ fontFamily: FF.body, fontSize: 16, color: C.muted, maxWidth: 480, lineHeight: 1.7, marginBottom: 40 }}>
-        Dancehall. Rockstar energy. First-listen language. From Kingston to the world.
+        Dancehall. Rockstar energy. From Kingston to the world.
       </p>
 
       {/* CTA row */}
