@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow+Condensed:wght@300;400;500;600;700&family=DM+Sans:wght@300;400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Bebas Neue", "Impact", sans-serif;
+  --font-ui:      "Barlow Condensed", sans-serif;
+  --font-body:    "DM Sans", sans-serif;
+
+  /* RajahWild — electric green on deep black */
+  --color-void:      #060606;
+  --color-night:     #0A0A0A;
+  --color-deep:      #111111;
+  --color-card:      #181818;
+  --color-wire:      #222222;
+  --color-volt:      #00FF5A;
+  --color-volt-dim:  rgba(0, 255, 90, 0.12);
+  --color-volt-glow: rgba(0, 255, 90, 0.35);
+  --color-cream:     #F0F0F0;
+  --color-muted:     rgba(240, 240, 240, 0.45);
+  --color-divider:   rgba(0, 255, 90, 0.1);
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { font-size: 17px; }
+
+html, body, #root {
+  height: 100%;
+  background: #060606;
+  color: #F0F0F0;
+  -webkit-font-smoothing: antialiased;
+}
+
+.volt-glow {
+  text-shadow: 0 0 20px rgba(0, 255, 90, 0.6), 0 0 50px rgba(0, 255, 90, 0.25);
+}
+
+.volt-border {
+  border-color: rgba(0, 255, 90, 0.25);
+}
