@@ -365,14 +365,15 @@ function Footer() {
         </a>
       </div>
       <p style={{ fontFamily: FF.body, fontSize: 11, color: C.dim }}>
-        © 2025 RajahWild. All rights reserved. Built by{' '}
-        <a href="https://mindwaveja.com" target="_blank" rel="noopener noreferrer" style={{ color: C.volt, textDecoration: 'none' }}>MindWave JA</a>.
+        © 2025 RajahWild. All rights reserved.
       </p>
     </footer>
   );
 }
 
 /* ─── App ───────────────────────────────────────────────────────────────── */
+
+
 export default function App() {
   const scrollRef = useRef<HTMLDivElement>(null);
 
@@ -390,6 +391,7 @@ export default function App() {
       <AboutSection />
       <MerchSection />
       <Footer />
+      
       <WorkingDraftBanner artist="RajahWild" />
     </div>
   );

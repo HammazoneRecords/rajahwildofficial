@@ -13,7 +13,7 @@ export default function WorkingDraftBanner({ artist }: Props) {
         className="font-ui text-[10px] uppercase tracking-widest text-center"
         style={{ color: 'rgba(251,191,36,0.65)' }}
       >
-        Working draft — buyer assumes responsibility for clearing image &amp; likeness rights with {artist}. This site is available for{' '}
+        Buyer assumes responsibility for clearing image &amp; likeness rights with {artist}. This site or one like it is available for{' '}
         <a
           href="https://mindwaveja.com"
           target="_blank"

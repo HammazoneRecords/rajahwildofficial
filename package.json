@@ -2,6 +2,7 @@
   "name": "rajah-wild",
   "private": true,
   "version": "0.0.0",
+  "packageManager": "pnpm@10.33.0",
   "type": "module",
   "scripts": {
     "dev": "vite --port=5185 --host=0.0.0.0",

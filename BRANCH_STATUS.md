@@ -16,6 +16,13 @@
 
 ## Last Action
 
+**Date:** 2026-06-03 (session 2)
+**Branch:** master
+**Action:** MindWave ref removed — footer now copyright-only. No other changes.
+**Schema migration:** none
+
+---
+
 **Date:** 2026-06-03
 **Branch:** master
 **Action:** Initial commit + push to GitHub
